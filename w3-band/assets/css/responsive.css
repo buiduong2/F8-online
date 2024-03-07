@@ -47,4 +47,13 @@
         display: block;
     }
 
+    .contact-info {
+        margin-bottom: 8px;
+    }
+
+    .btn,
+    #contact button {
+        width: 100%;
+    }
+
 }
