@@ -1,0 +1,46 @@
+@media (max-width:740px) {
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header #nav {
+        display: block;
+    }
+
+    #header #nav li {
+        display: block;
+        float: none;
+    }
+
+    #header #nav>li:first-child {
+        display: inline-block;
+    }
+
+    #header .sub-nav {
+        position: unset;
+        background-color: #000000b0;
+    }
+
+    #header .sub-nav>li>a {
+        color: white;
+        padding: 2px 25px;
+    }
+
+    #header .search-btn:hover {
+        background-color: #ccc;
+    }
+
+    #header .search-btn:hover .menu-icon {
+        color: black;
+    }
+
+    #header .search-icon {
+        display: none;
+    }
+
+    #header .menu-icon {
+        display: block;
+    }
+
+}
