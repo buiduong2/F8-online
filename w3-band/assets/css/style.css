@@ -71,6 +71,10 @@ html {
     text-align: center;
 }
 
+.mt-16 {
+    margin-top: 16px;
+}
+
 /* #main {} */
 
 
@@ -243,7 +247,8 @@ html {
 }
 
 #band .member-img {
-    height: 154px;
+    /* Kê nên fix cứng */
+    width: 60%;
     border-radius: 4px;
 }
 
@@ -289,7 +294,7 @@ html {
 }
 
 #tour .tour-places {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 #tour .place-img {
