@@ -308,15 +308,14 @@ html {
 }
 
 #tour .place-body {
-    display: inline-block;
     background-color: #fff;
-    padding: 0 16px 16px;
+    padding: 16px;
 }
 
 #tour .place-title {
     font-size: 15px;
     font-weight: 600;
-    margin: 15px 0;
+    padding: 15px auto;
 }
 
 #tour .place-time {
