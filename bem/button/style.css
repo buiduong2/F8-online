@@ -1,0 +1,64 @@
+body {
+    height: 500px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body>div {
+    display: flex;
+}
+
+
+.btn {
+    color: white;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    transition: opacity ease-in-out 0.1s;
+    padding: 5px 30px;
+    min-width: 80px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn+.btn {
+    margin-left: 50px;
+}
+
+.btn--succuess {
+    background: #71be34;
+}
+
+.btn--warrning {
+    background: #ffb702;
+}
+
+.btn--danger {
+    background: #ff0000;
+}
+
+.btn--disable {
+    /* KO thể sửa lại trừ khi sửa trong file code Chấp cả style inline */
+    opacity: 0.5 !important;
+}
+
+.btn--disable:hover {
+    cursor: auto;
+}
+
+.btn--size-l {
+    padding: 7.5px 45px;
+}
+
+.btn--size-s {
+    padding: 2.5px 15px;
+}
