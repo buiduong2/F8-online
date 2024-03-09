@@ -1,11 +1,13 @@
 :root {
-    --white: color: #fff;
-    --black: color: #000;
-    --text-color: color:#ccc;
+    --white: #fff;
+    --black: #000;
+    --text-color: #ccc;
 }
 
 * {
     box-sizing: inherit;
+    padding: 0;
+    margin: 0;
 }
 
 html {
@@ -13,6 +15,10 @@ html {
     line-height: 1.6rem;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+}
+
+a {
+    color: inherit;
 }
 
 
@@ -29,4 +35,9 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.modal {
+    display: none;
+    z-index: 10;
 }
