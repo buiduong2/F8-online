@@ -13,7 +13,7 @@
 }
 
 .header__nav {
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .header__nav-list {
@@ -24,7 +24,6 @@
 .header__nav-item {
     padding: 10px;
     font-weight: 400;
-
 }
 
 .header__nav-item:hover {
@@ -59,6 +58,11 @@
 }
 
 /* Stores dơnload APp */
+.header__nav-item--modal {
+    position: relative;
+}
+
+
 header .header__nav-item--modal:hover .modal {
     display: block;
 }
@@ -87,14 +91,6 @@ header .header__nav-item--modal:hover .modal {
 
 }
 
-.modal--scale {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    transform-origin: 90% 0%;
-    opacity: 0;
-    transform: scale(0);
-}
 
 .modal--scale::after {
     content: "";
@@ -183,10 +179,10 @@ header .header__nav-item--modal:hover .modal--scale {
 
 .header__content-logo {
     width: 200px;
-    fill: #fff;
 }
 
 .header__content-logo svg {
+    fill: #fff;
     height: 50px;
 }
 
@@ -199,7 +195,11 @@ header .header__nav-item--modal:hover .modal--scale {
     padding: 3px;
     background-color: var(--white);
     border-radius: 3px;
+    box-shadow: .125rem .25rem rgba(0, 0, 0, .09);
+    position: relative;
 }
+
+
 
 .form__search-input {
     flex-grow: 1;
@@ -208,6 +208,7 @@ header .header__nav-item--modal:hover .modal--scale {
     font-size: 1.4rem;
     position: relative;
 }
+
 
 .separate-r--form::after {
     background-color: #ccc !important;
@@ -222,6 +223,43 @@ header .header__nav-item--modal:hover .modal--scale {
     border: none;
     overflow: hidden;
     color: var(--text-color);
+    position: relative;
+}
+
+.form__select-options {
+    border-radius: 4px;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: calc(10px);
+    color: var(--text-color);
+    font-size: 1.4rem;
+    background-color: var(--white);
+    width: 200px;
+}
+
+.form__select-options::before {
+    content: "";
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    height: 10px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+}
+
+.form__select-values {
+    padding: 15px;
+}
+
+.form__search:hover .modal {
+    display: block;
+}
+
+.form__select-values:hover {
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, .09);
+    cursor: pointer;
 }
 
 .form__search-btn {
@@ -261,4 +299,34 @@ header .header__nav-item--modal:hover .modal--scale {
 .header__content-cart {
     width: 160px;
     font-size: 26px;
+}
+
+.header__content-cart i {
+    padding: 10px;
+}
+
+.modal--scale-cart {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    background-color: white;
+    width: 400px;
+    top: calc(100% + 9px);
+}
+
+.modal--scale-cart::after {
+    right: 10px;
+}
+
+.cart-no-item {
+    padding: 50px 0;
+}
+
+.modal--scale-cart .cart-modal__img {
+    width: 100px;
+}
+
+.modal--scale-cart .cart-modal__img img {
+    width: 100%;
 }
