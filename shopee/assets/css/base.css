@@ -92,3 +92,7 @@ a {
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
 }
+
+.main {
+    background-color: #F5F5F5;
+}

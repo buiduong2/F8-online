@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/slide.css">
-    <link rel="stylesheet" href="./assets/css/content.css">
+    <link rel="stylesheet" href="./assets/css/filter.css">
 </head>
 
 <body>
@@ -156,7 +156,87 @@
                 <i class="fa-solid fa-chevron-right"></i>
             </div>
         </div>
-        <div class="container"></div>
+        <div class="container grid">
+            <div class="grid__row">
+                <div class="container__side col1-6">
+                    <div class="container__side-content">
+                        <h3 class="filter-title ">Tất Cả Danh Mục</h3>
+                        <ul class="filter-list border-t">
+                            <li class="filter-item filter-item--active  ">
+                                <i class="filter-active-icon fa-solid fa-caret-right"></i>
+                                <a href="#">Máy tính và Laptop</a>
+                            </li>
+                            <li class="filter-item"><a href="#">Máy tính bàn</a> </li>
+                            <li class="filter-item"><a href="#">Màn hình</a> </li>
+                            <li class="filter-item"><a href="#">Linh kiện máy tính</a> </li>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="container__side-content">
+                        <h3 class="filter-title">BỘ LỌC TÌM KIẾM </h3>
+
+                        <ul class="filter-list border-b-t">
+                            <h4 class="container__side-title"> Theo Danh Mục</h4>
+                            <li class="filter-item"><input type="checkbox" name="dm1" id="1">
+                                <label for="1" class="container__filter-input-desc">Chuột & bàn phím</label>
+                            </li>
+                            <li class="filter-item"><input type="checkbox" name="dm1" id="2">
+                                <label for="2" class="container__filter-input-desc">Máy In & Máy Scan</label>
+                            </li>
+                            <li class="filter-item"><input type="checkbox" name="dm1" id="3">
+                                <label for="3" class="container__filter-input-desc">Thiết Bị Mạng</label>
+                            </li>
+                        </ul>
+
+                        <ul class="filter-list border-b-t">
+                            <h4 class="container__side-title"> Khoảng giá</h4>
+                            <div class="filter-list-price">
+                                <input class="filter-price-input" type="text" placeholder="₫ TỪ">
+                                <span class="filter-list-price-icon">&#8594;</span>
+                                <input class="filter-price-input" type="text" placeholder="₫ ĐẾN">
+                            </div>
+
+                            <button type="submit" class="form__search-btn filter-btn">Áp DỤNG</button>
+                        </ul>
+
+                        <ul class="filter-list border-t">
+                            <h4 class="container__side-title"> Khoảng giá</h4>
+                            <li class="filter-item container__filter_item-star">
+                                <i class=" fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                Trở lên
+                            </li>
+                            <li class="filter-item container__filter_item-star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Trở lên
+                            </li>
+                            <li class="filter-item container__filter_item-star">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                Trở lên
+                            </li>
+                        </ul>
+
+                        <div class="filter-list border-t">
+                            <button type="submit" class="form__search-btn filter-btn"> XOÁ TẤT CẢ</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container__main col2-6"></div>
+            </div>
+        </div>
         <footer class="footer"></footer>
     </div>
 </body>
