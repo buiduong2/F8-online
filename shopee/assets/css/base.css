@@ -2,7 +2,7 @@
     --white: #fff;
     --black: #000;
     --text-color: #000000CC;
-    --main-color: #F5962D;
+    --main-color: #fb5533;
 }
 
 * {
@@ -41,4 +41,27 @@ a {
 .modal {
     display: none;
     z-index: 10;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.separate-r {
+    position: relative;
+}
+
+.separate-r::after {
+
+    content: "";
+    display: block;
+    width: 2px;
+    height: 15px;
+    background-color: hsla(0, 0%, 100%, .22);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
