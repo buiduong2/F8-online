@@ -198,14 +198,3 @@
 .container__body-place {
   margin-top: 8px;
 }
-
-
-/* Test */
-.test-item {
-  height: 100%;
-  min-height: 340px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}

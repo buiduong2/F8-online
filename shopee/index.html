@@ -374,7 +374,7 @@
             </div>
 
             <div class="container__body grid__row">
-              <div class="col1-5">
+              <div class="col1-5 js-item">
                 <div class="container__body-item">
                   <div class="container__item-decrease">-40%</div>
                   <div class="container__item-label">Yêu thích+</div>
@@ -412,7 +412,7 @@
                 </div>
               </div>
 
-              <div class="col1-5">
+              <div class="col1-5 js-item">
                 <div class="container__body-item">
                   <div class="container__item-decrease">-40%</div>
                   <div class="container__item-label">Mall+</div>
@@ -443,60 +443,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Test -->
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 1</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 2</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 3</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 4</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 5</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 6</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 7</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 8</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 9</h2>
-                </div>
-              </div>
-              <div class="col1-5">
-                <div class="test-item">
-                  <h2>item 10</h2>
-                </div>
-              </div>
-
-              <!-- Test End -->
             </div>
           </div>
         </div>
@@ -505,5 +451,13 @@
     </div>
   </body>
 
-  <script></script>
+  <script>
+    const items = document.querySelectorAll(".js-item");
+    const parent = document.querySelector(".container__body");
+
+    for (let i = 0; i < 10; i++) {
+      const clone = items[Math.floor(Math.random() * 2)];
+      parent.appendChild(clone.cloneNode(true));
+    }
+  </script>
 </html>
