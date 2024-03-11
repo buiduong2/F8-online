@@ -1,0 +1,56 @@
+.container {
+  margin-top: 20px;
+}
+
+.container img {
+  width: 100%;
+  display: block;
+}
+
+.cargo__image {
+  padding: 15px;
+  background-color: purple;
+}
+
+.cargo__image-item-list {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.cargo__image-item {
+  padding: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.cargo__image-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  /* padding */
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  z-index: 1;
+}
+.cargo__image-item:hover::after {
+  border: 3px solid var(--main-color);
+}
+
+.container .change-image-arrow {
+  opacity: 1;
+  font-size: 15px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.container .change-image-arrow--left {
+  left: 5px;
+}
+
+.container .change-image-arrow--right {
+  right: 5px;
+}
