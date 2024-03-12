@@ -13,7 +13,7 @@
 
 html {
   font-size: 62.5%;
-  line-height: 1.6rem;
+  /* line-height: 1.6rem; */
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
@@ -50,8 +50,12 @@ a {
   width: 20%;
 }
 
-.col4-6 {
+.col2-5 {
   width: 40%;
+}
+
+.col3-5 {
+  width: 60%;
 }
 
 .modal,

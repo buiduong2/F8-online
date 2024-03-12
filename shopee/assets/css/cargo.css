@@ -1,15 +1,19 @@
 .container {
   margin-top: 20px;
   color: var(--text-color);
+  background-color: var(--white);
 }
 
 .container img {
-  width: 100%;
   display: block;
 }
 
 .cargo__image {
   padding: 15px;
+}
+
+.cargo__image img {
+  width: 100%;
 }
 
 .cargo__image-item-list {
@@ -126,6 +130,141 @@
   display: none;
 }
 
+.cargo__desc {
+  padding: 20px 35px;
+}
 
+.cargo__desc-title {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+.cargo__desc-title-label {
+  vertical-align: middle;
+  align-self: center;
+  line-height: 1.8rem;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  color: var(--white);
+  background-color: var(--main-color);
+  border-radius: 2px;
+  display: inline-block;
+}
 
+.cargo__desc-interact {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  justify-content: space-between;
+  color: #767676;
+}
 
+.cargo__desc-interact .title {
+  color: #222;
+  font-size: 1.7rem;
+  text-decoration: underline;
+}
+
+.cargo__interact-cmt,
+.cargo__interact-sold {
+  padding: 0 20px;
+}
+
+.cargo__interact-star {
+  padding-right: 20px;
+  color: var(--main-color);
+}
+
+.cargo__interact-star .title {
+  color: var(--main-color);
+}
+.cargo__interact-star .icon {
+  font-size: var(--star-height);
+}
+.cargo__interact-cmt {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.cargo__interact-sold .title {
+  text-decoration: none;
+}
+.cargo__interact-report:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* Flash share */
+.cargo__flash-sale {
+  margin-top: 15px;
+}
+
+.flash-sale__header {
+  background-image: url(../img/cargo/flash-sale-bg.jpg);
+  background-size: cover;
+  padding: 7px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flash-sale__title img {
+  height: 100%;
+}
+
+.flash-sale__clock {
+  font-size: 1.4rem;
+  color: var(--white);
+  display: flex;
+}
+
+.flash-sale__clock-title .icon {
+  font-size: 2rem;
+}
+
+.flash-sale__clock-content {
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flash-sale__clock-item {
+  background-color: #000;
+  font-size: 1.7rem;
+  padding: 0 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.flash-sale__clock-item ~ .flash-sale__clock-item {
+  margin-left: 10px;
+}
+
+.flash-sale__body {
+  background-color: #fafafa;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.flash-sale__body .flash-sale__price--new,
+.flash-sale__body .flash-sale__price--old {
+  margin-right: 10px;
+}
+
+.flash-sale__body .flash-sale__price--old {
+  font-size: 1.6rem;
+  color: #92929292;
+  text-decoration: line-through;
+}
+.flash-sale__body .flash-sale__price--new {
+  font-size: 3rem;
+  color: var(--main-color);
+}
+.flash-sale__body .flash-sale__discount {
+  color: var(--white);
+  background-color: var(--main-color);
+  padding: 2px 4px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
