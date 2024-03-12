@@ -373,8 +373,8 @@
               </div>
             </div>
 
-            <div class="container__body grid__row">
-              <div class="col1-5 js-item">
+            <div class="container__body grid__row js-parent">
+              <div class="col1-5 js-child">
                 <div class="container__body-item">
                   <div class="container__item-decrease">-40%</div>
                   <div class="container__item-label">Yêu thích+</div>
@@ -412,7 +412,7 @@
                 </div>
               </div>
 
-              <div class="col1-5 js-item">
+              <div class="col1-5 js-child">
                 <div class="container__body-item">
                   <div class="container__item-decrease">-40%</div>
                   <div class="container__item-label">Mall+</div>
@@ -450,13 +450,5 @@
     </div>
   </body>
 
-  <script>
-    const items = document.querySelectorAll(".js-item");
-    const parent = document.querySelector(".container__body");
-
-    for (let i = 0; i < 10; i++) {
-      const clone = items[Math.floor(Math.random() * 2)];
-      parent.appendChild(clone.cloneNode(true));
-    }
-  </script>
+  <script src="./assets/js/clone.js"></script>
 </html>

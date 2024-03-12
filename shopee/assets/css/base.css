@@ -38,6 +38,10 @@ a {
   flex-wrap: wrap;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .col1-6 {
   width: 16.66667%;
 }
@@ -56,6 +60,14 @@ a {
 
 .col3-5 {
   width: 60%;
+}
+
+.col4-5 {
+  width: 80%;
+}
+
+.mt-15 {
+  margin-top: 15px;
 }
 
 .modal,
